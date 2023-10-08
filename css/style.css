@@ -1187,5 +1187,8 @@ body.vegas-container > .vegas-slide {
   font-weight: 700;
 }
 .txt{
-  text-align: left;
+  text-align: center;
+}
+.flag {
+  width: 150px;
 }
