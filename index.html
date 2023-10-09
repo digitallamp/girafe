@@ -15,7 +15,11 @@
 
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="css/plugins/bootstrap.min.css">
-
+<link
+     rel="stylesheet"
+     href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css"
+   />
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
   <!-- Font Icons -->
   <link rel="stylesheet" href="css/icons/font-awesome.css">
   <link rel="stylesheet" href="css/icons/linea.css">
@@ -380,6 +384,10 @@
                     <input type="email" class="form-control form-control-dark" id="form-email" name="form-email"
                       placeholder="Email">
                   </div>
+                   <div class="form-group" id="phone-field">
+                    <label for="form-email" class="sr-only">Phone</label>
+                    <input type="tel" class="form-control form-control-dark" id="phone" name="phone">
+                  </div>
                   <!-- /End Input Email -->
 
                   <!-- Input Message -->
@@ -402,6 +410,7 @@
 
                 </form>
                 <!-- /End Contact Form -->
+ <div class="alert alert-info" style="display: none;"></div>
 
                 <!-- Arrow -->
                 <div class="p-t-b-40">
@@ -425,7 +434,7 @@
 
                     <!-- Address -->
                     <div>
-                      <h4>Head Office</h4>
+                      <h4>India</h4>
                       
                       <p class="txt"><i class="fa fa-map-marker" aria-hidden="true"></i> F-425, Second Floor, B-Square Resource Centre
                         Mohali, Sector 91, Sahibzada Ajit Singh Nagar, Punjab 160071</p>
@@ -448,7 +457,7 @@
 
                     <!-- Address -->
                     <div>
-                      <h4>Branch Office</h4>
+                      <h4>Canada</h4>
                       <p class="txt"><i class="fa fa-map-marker" aria-hidden="true"></i> 11 Skyvalley Drive, Brampton, Ontario, Canada,
                         L6P2M9</p><br>
                       <p class="txt"><i class="fa fa-envelope-o" aria-hidden="true"></i> akash@thegirafe.ca</p><br>
@@ -496,5 +505,11 @@
   <script src="js/custom.js"></script>
 
 </body>
-
+<script>
+   const phoneInputField = document.querySelector("#phone");
+   const phoneInput = window.intlTelInput(phoneInputField, {
+     utilsScript:
+       "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
+   });
+ </script>
 </html>
