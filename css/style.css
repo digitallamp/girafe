@@ -1190,5 +1190,8 @@ body.vegas-container > .vegas-slide {
   text-align: center;
 }
 .flag {
-  width: 150px;
+  width: 80px;
+}
+.iti {
+    width: 100%;
 }
